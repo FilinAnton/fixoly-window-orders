@@ -1,0 +1,68 @@
+[
+  {
+    "id": "order-1001",
+    "orderNumber": "WIN-1001",
+    "customerName": "Алексей Мороз",
+    "address": "ул. Шевченко, 18",
+    "windowType": "Поворотно-откидное",
+    "width": 1400,
+    "height": 1250,
+    "status": "new",
+    "createdAt": "2026-09-14T08:30:00.000Z"
+  },
+  {
+    "id": "order-1002",
+    "orderNumber": "WIN-1002",
+    "customerName": "Марина Коваль",
+    "address": "просп. Свободы, 42",
+    "windowType": "Раздвижное",
+    "width": 2200,
+    "height": 1450,
+    "status": "inProgress",
+    "createdAt": "2026-09-13T12:15:00.000Z"
+  },
+  {
+    "id": "order-1003",
+    "orderNumber": "WIN-1003",
+    "customerName": "Олег Бондарь",
+    "address": "ул. Центральная, 7",
+    "windowType": "Поворотное",
+    "width": 900,
+    "height": 1200,
+    "status": "completed",
+    "createdAt": "2026-09-12T09:45:00.000Z"
+  },
+  {
+    "id": "order-1004",
+    "orderNumber": "WIN-1004",
+    "customerName": "Ирина Левченко",
+    "address": "ул. Садовая, 31",
+    "windowType": "Откидное",
+    "width": 700,
+    "height": 600,
+    "status": "new",
+    "createdAt": "2026-09-11T15:20:00.000Z"
+  },
+  {
+    "id": "order-1005",
+    "orderNumber": "WIN-1005",
+    "customerName": "Дмитрий Савчук",
+    "address": "ул. Независимости, 103",
+    "windowType": "Поворотно-откидное",
+    "width": 1300,
+    "height": 1350,
+    "status": "inProgress",
+    "createdAt": "2026-09-10T11:05:00.000Z"
+  },
+  {
+    "id": "order-1006",
+    "orderNumber": "WIN-1006",
+    "customerName": "Наталья Романюк",
+    "address": "ул. Лесная, 4",
+    "windowType": "Раздвижное",
+    "width": 2400,
+    "height": 1600,
+    "status": "completed",
+    "createdAt": "2026-09-09T07:50:00.000Z"
+  }
+]
