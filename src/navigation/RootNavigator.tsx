@@ -11,6 +11,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 export function RootNavigator() {
   return (
     <Stack.Navigator
+      initialRouteName="Home"
       screenOptions={{
         headerBackTitle: 'Назад',
         headerShadowVisible: false,

@@ -1,5 +1,6 @@
 export const ORDER_STATUSES = ['new', 'inProgress', 'completed'] as const;
 export type OrderStatus = (typeof ORDER_STATUSES)[number];
+export type OrderFilter = 'all' | OrderStatus;
 
 export const WINDOW_TYPES = [
   'Поворотное',

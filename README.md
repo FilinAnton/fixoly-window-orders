@@ -10,6 +10,7 @@
 - циклическая смена статуса заказа;
 - создание нового заказа с проверкой обязательных полей;
 - выбор типа окна из четырёх вариантов;
+- доступные подписи для интерактивных элементов и ошибок формы;
 - типизированная навигация между экранами;
 - единое состояние приложения через React Context и `useReducer`.
 
@@ -79,6 +80,7 @@ A React Native, Expo, and TypeScript assessment app for managing window replacem
 - cyclic order status transition;
 - validated order creation form;
 - four available window types;
+- accessible labels for interactive controls and form errors;
 - typed stack navigation;
 - centralized state with React Context and `useReducer`.
 

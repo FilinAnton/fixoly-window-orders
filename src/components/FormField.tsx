@@ -14,7 +14,11 @@ export function FormField({ label, error, children }: FormFieldProps) {
     <View style={styles.container}>
       <Text style={styles.label}>{label}</Text>
       {children}
-      {error ? <Text style={styles.error}>{error}</Text> : null}
+      {error ? (
+        <Text accessibilityLiveRegion="polite" style={styles.error}>
+          {error}
+        </Text>
+      ) : null}
     </View>
   );
 }

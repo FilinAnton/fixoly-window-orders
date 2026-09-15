@@ -8,26 +8,24 @@ import { OrderCard } from '../components/OrderCard';
 import type { RootStackParamList } from '../navigation/types';
 import { useOrders } from '../store/OrdersContext';
 import { colors } from '../theme/colors';
-import type { OrderStatus } from '../types/order';
+import type { OrderFilter } from '../types/order';
 import { statusLabels } from '../utils/orderStatus';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
-type StatusFilter = 'all' | OrderStatus;
-
-const filters: readonly StatusFilter[] = [
+const filters: readonly OrderFilter[] = [
   'all',
   'new',
   'inProgress',
   'completed',
 ];
 
-function getFilterLabel(filter: StatusFilter): string {
+function getFilterLabel(filter: OrderFilter): string {
   return filter === 'all' ? 'Все' : statusLabels[filter];
 }
 
 export function HomeScreen({ navigation }: Props) {
   const { orders } = useOrders();
-  const [filter, setFilter] = useState<StatusFilter>('all');
+  const [filter, setFilter] = useState<OrderFilter>('all');
 
   const visibleOrders = useMemo(
     () =>
@@ -43,7 +41,9 @@ export function HomeScreen({ navigation }: Props) {
         <View style={styles.summary}>
           <View>
             <Text style={styles.eyebrow}>АКТИВНЫЕ ЗАЯВКИ</Text>
-            <Text style={styles.summaryValue}>{orders.length} заказов</Text>
+            <Text accessibilityRole="header" style={styles.summaryValue}>
+              {orders.length} заказов
+            </Text>
           </View>
           <View style={styles.summaryIcon}>
             <Text style={styles.summaryIconText}>▦</Text>

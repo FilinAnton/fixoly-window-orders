@@ -11,6 +11,7 @@ interface FilterChipProps {
 export function FilterChip({ label, selected, onPress }: FilterChipProps) {
   return (
     <Pressable
+      accessibilityLabel={`Фильтр: ${label}`}
       accessibilityRole="button"
       accessibilityState={{ selected }}
       onPress={onPress}

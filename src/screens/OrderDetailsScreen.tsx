@@ -34,7 +34,11 @@ export function OrderDetailsScreen({ route, navigation }: Props) {
       <SafeAreaView edges={['bottom']} style={styles.safeArea}>
         <View style={styles.notFound}>
           <Text style={styles.notFoundTitle}>Заказ не найден</Text>
-          <Pressable onPress={() => navigation.goBack()}>
+          <Pressable
+            accessibilityLabel="Вернуться к списку заказов"
+            accessibilityRole="button"
+            onPress={() => navigation.goBack()}
+          >
             <Text style={styles.backLink}>Вернуться к списку</Text>
           </Pressable>
         </View>
@@ -69,6 +73,7 @@ export function OrderDetailsScreen({ route, navigation }: Props) {
 
         <Pressable
           accessibilityHint={`Следующий статус: ${statusLabels[nextStatus]}`}
+          accessibilityLabel="Изменить статус заказа"
           accessibilityRole="button"
           onPress={() => advanceOrderStatus(order.id)}
           style={({ pressed }) => [

@@ -12,7 +12,7 @@ import type { CreateOrderInput, Order } from '../types/order';
 import { getNextStatus } from '../utils/orderStatus';
 
 interface OrdersState {
-  orders: Order[];
+  orders: readonly Order[];
 }
 
 type OrdersAction =

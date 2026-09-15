@@ -8,7 +8,10 @@ import { navigationTheme } from './src/theme/navigationTheme';
 export default function App() {
   return (
     <OrdersProvider>
-      <NavigationContainer theme={navigationTheme}>
+      <NavigationContainer
+        documentTitle={{ formatter: () => 'Window Orders' }}
+        theme={navigationTheme}
+      >
         <StatusBar style="dark" />
         <RootNavigator />
       </NavigationContainer>

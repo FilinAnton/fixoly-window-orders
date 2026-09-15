@@ -64,5 +64,27 @@
     "height": 1600,
     "status": "completed",
     "createdAt": "2026-09-09T07:50:00.000Z"
+  },
+  {
+    "id": "order-1007",
+    "orderNumber": "WIN-1007",
+    "customerName": "Сергей Мельник",
+    "address": "ул. Грушевского, 26",
+    "windowType": "Поворотное",
+    "width": 1100,
+    "height": 1300,
+    "status": "new",
+    "createdAt": "2026-09-08T10:25:00.000Z"
+  },
+  {
+    "id": "order-1008",
+    "orderNumber": "WIN-1008",
+    "customerName": "Елена Ткаченко",
+    "address": "ул. Европейская, 55",
+    "windowType": "Откидное",
+    "width": 800,
+    "height": 650,
+    "status": "inProgress",
+    "createdAt": "2026-09-07T14:40:00.000Z"
   }
 ]

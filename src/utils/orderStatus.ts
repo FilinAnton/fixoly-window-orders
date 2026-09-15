@@ -1,4 +1,4 @@
-import type { OrderStatus } from '../types/order';
+import { ORDER_STATUSES, type OrderStatus } from '../types/order';
 import { colors } from '../theme/colors';
 
 export const statusLabels: Record<OrderStatus, string> = {
@@ -22,13 +22,7 @@ export const statusColors: Record<
   },
 };
 
-const statusSequence: readonly OrderStatus[] = [
-  'new',
-  'inProgress',
-  'completed',
-];
-
 export function getNextStatus(current: OrderStatus): OrderStatus {
-  const currentIndex = statusSequence.indexOf(current);
-  return statusSequence[(currentIndex + 1) % statusSequence.length] ?? 'new';
+  const currentIndex = ORDER_STATUSES.indexOf(current);
+  return ORDER_STATUSES[(currentIndex + 1) % ORDER_STATUSES.length] ?? 'new';
 }

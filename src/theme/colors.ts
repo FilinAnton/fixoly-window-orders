@@ -8,6 +8,7 @@ export const colors = {
   primary: '#2563EB',
   primaryPressed: '#1D4ED8',
   primarySoft: '#E8F0FF',
+  focusRing: '#93C5FD',
   danger: '#DC2626',
   dangerSoft: '#FEECEC',
   new: '#2563EB',

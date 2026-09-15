@@ -123,6 +123,7 @@ export function CreateOrderScreen({ navigation }: Props) {
           <View style={styles.formCard}>
             <FormField error={errors.customerName} label="Имя клиента">
               <TextInput
+                accessibilityLabel="Имя клиента"
                 autoCapitalize="words"
                 onChangeText={(value) => updateField('customerName', value)}
                 placeholder="Например, Анна Коваль"
@@ -135,6 +136,7 @@ export function CreateOrderScreen({ navigation }: Props) {
 
             <FormField error={errors.address} label="Адрес">
               <TextInput
+                accessibilityLabel="Адрес"
                 autoCapitalize="sentences"
                 onChangeText={(value) => updateField('address', value)}
                 placeholder="Улица, дом, квартира"
@@ -156,6 +158,7 @@ export function CreateOrderScreen({ navigation }: Props) {
               <View style={styles.dimensionField}>
                 <FormField error={errors.width} label="Ширина, мм">
                   <TextInput
+                    accessibilityLabel="Ширина окна в миллиметрах"
                     keyboardType="decimal-pad"
                     onChangeText={(value) => updateField('width', value)}
                     placeholder="1200"
@@ -168,6 +171,7 @@ export function CreateOrderScreen({ navigation }: Props) {
               <View style={styles.dimensionField}>
                 <FormField error={errors.height} label="Высота, мм">
                   <TextInput
+                    accessibilityLabel="Высота окна в миллиметрах"
                     keyboardType="decimal-pad"
                     onChangeText={(value) => updateField('height', value)}
                     placeholder="1400"
@@ -181,6 +185,8 @@ export function CreateOrderScreen({ navigation }: Props) {
           </View>
 
           <Pressable
+            accessibilityHint="Добавляет заказ и возвращает к списку"
+            accessibilityLabel="Сохранить заказ"
             accessibilityRole="button"
             onPress={submit}
             style={({ pressed }) => [

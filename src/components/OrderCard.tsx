@@ -13,6 +13,7 @@ interface OrderCardProps {
 export function OrderCard({ order, onPress }: OrderCardProps) {
   return (
     <Pressable
+      accessibilityHint="Открывает полную информацию о заказе"
       accessibilityLabel={`Открыть заказ ${order.orderNumber}`}
       accessibilityRole="button"
       onPress={onPress}

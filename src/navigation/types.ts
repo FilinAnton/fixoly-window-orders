@@ -1,5 +1,5 @@
 export type RootStackParamList = {
   Home: undefined;
-  OrderDetails: { orderId: string };
+  OrderDetails: Readonly<{ orderId: string }>;
   CreateOrder: undefined;
 };

@@ -37,6 +37,7 @@ export function WindowTypeSelect({ value, onChange }: WindowTypeSelectProps) {
       </Pressable>
       <Modal
         animationType="slide"
+        onDismiss={() => setVisible(false)}
         onRequestClose={() => setVisible(false)}
         presentationStyle="pageSheet"
         visible={visible}
@@ -44,7 +45,11 @@ export function WindowTypeSelect({ value, onChange }: WindowTypeSelectProps) {
         <SafeAreaView style={styles.modal}>
           <View style={styles.modalHeader}>
             <Text style={styles.modalTitle}>Тип окна</Text>
-            <Pressable onPress={() => setVisible(false)}>
+            <Pressable
+              accessibilityLabel="Закрыть выбор типа окна"
+              accessibilityRole="button"
+              onPress={() => setVisible(false)}
+            >
               <Text style={styles.close}>Закрыть</Text>
             </Pressable>
           </View>
@@ -54,6 +59,7 @@ export function WindowTypeSelect({ value, onChange }: WindowTypeSelectProps) {
               return (
                 <Pressable
                   key={windowType}
+                  accessibilityLabel={`Тип окна: ${windowType}`}
                   accessibilityRole="button"
                   accessibilityState={{ selected }}
                   onPress={() => chooseType(windowType)}

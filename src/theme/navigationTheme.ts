@@ -4,6 +4,7 @@ import { colors } from './colors';
 
 export const navigationTheme: Theme = {
   ...DefaultTheme,
+  dark: false,
   colors: {
     ...DefaultTheme.colors,
     primary: colors.primary,
