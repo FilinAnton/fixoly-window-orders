@@ -42,6 +42,8 @@ npm run export
 
 Проект проверен на iPhone 16 Pro Simulator с iOS 18.3 и Expo SDK 57. Протестированы фильтрация заказов, переходы между экранами, циклическая смена статуса, валидация формы и добавление нового заказа. Экспорт для iOS и Android выполняется без ошибок.
 
+Последняя полная проверка проекта: 15 сентября 2026 года.
+
 ## Структура
 
 - `src/screens` — экраны приложения;
@@ -104,6 +106,8 @@ npm run export
 ```
 
 The project was verified on an iPhone 16 Pro Simulator running iOS 18.3 with Expo SDK 57. Order filtering, screen navigation, cyclic status updates, form validation, and new order creation were tested. Both iOS and Android exports complete successfully.
+
+Last full project verification: September 15, 2026.
 
 ## Implementation notes
 
